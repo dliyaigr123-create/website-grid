@@ -1,0 +1,49 @@
+
+.header {
+    background-image: url('../../images/banner.png');
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header__wrapper {
+    display: grid;
+}
+
+.header__top {
+    
+}
+
+.header__title {
+
+}
+
+.header__nav {
+
+}
+
+.header__nav-list {
+
+}
+
+.header__nav-item {
+
+}
+
+.header__nav-link {
+
+}
+
+.header__title-center {
+
+}
+
+.header__subtitle {
+
+}
+
+.header__arrow {
+
+}
