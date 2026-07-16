@@ -1,0 +1,71 @@
+.gallery-wrapper {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+    "one two three four"
+    "five six  seven  eight";
+    margin-bottom: 50px;
+}
+
+.gallery-images {
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.7s;
+  
+}
+
+.gallery-images:hover{
+    cursor: pointer;
+    border: 3px solid rgb(255, 94, 0);
+}
+
+.gallery-img-1, .gallery-img-2, .gallery-img-3, .gallery-img-4, .gallery-img-5, .gallery-img-6, .gallery-img-7, .gallery-img-8 {
+    aspect-ratio: 1 / 1;
+}
+.gallery-img-1 {background-image: url('../../images/Layer\ 8.png');}
+.gallery-img-2 {background-image: url('../../images/Layer\ 9.png');}
+.gallery-img-3 {background-image: url('../../images/Layer\ 10.png');}
+.gallery-img-4 {background-image: url('../../images/Layer\ 11.png');}
+.gallery-img-5 {background-image: url('../../images/Layer\ 12.png');}
+.gallery-img-6 {background-image: url('../../images/Layer\ 13.jpg');}
+.gallery-img-7 {background-image: url('../../images/Layer\ 14.jpg');}
+.gallery-img-8 {background-image: url('../../images/Layer\ 15.jpg');}
+
+.gallery-img-1 {grid-area: one;}
+.gallery-img-2 {grid-area: two;}
+.gallery-img-3 {grid-area: three;}
+.gallery-img-4 {grid-area: four;}
+.gallery-img-5 {grid-area: five;}
+.gallery-img-6 {grid-area: six;}
+.gallery-img-7 {grid-area: seven;}
+.gallery-img-8 {grid-area: eight;}
+
+.gallery-text {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  display: grid;
+  row-gap: 20px;
+  justify-items: center;
+  z-index: 10; 
+  background-color: rgba(0, 0, 0, 0.4); 
+  pointer-events: none;
+  
+}
+
+.gallery-text-title {
+    justify-self: center;
+    align-self: flex-end;
+    color: white;
+    font-size: 60px;
+    letter-spacing: 50%;
+    font-family: ProximaNova-Light;
+}
+.gallery-text-subtitle {
+    color: red;
+    font-size: 40px;
+    letter-spacing: 30%;
+    margin-bottom: 150px;
+    font-family: ProximaNova-Bold;
+}

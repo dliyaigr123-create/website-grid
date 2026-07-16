@@ -1,0 +1,69 @@
+.container__images-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
+  margin-bottom: 50px;
+  
+  grid-template-areas:
+    "gourmet gourmet carhartt"
+    "gourmet gourmet adidas"
+    "deep    palace  nike";
+}
+
+.img-1 { grid-area: gourmet; }
+.img-2 { grid-area: carhartt; }
+.img-3 { grid-area: adidas; }
+.img-4 { grid-area: deep; }
+.img-5 { grid-area: palace; }
+.img-6 { grid-area: nike; }
+
+
+.container__images-content {
+  display: grid;
+  justify-content: start; 
+  align-content: flex-end;  
+  gap: 15px;
+  padding-bottom: 30px;
+  padding-left: 30px;       
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.container__images-content:hover {
+    border: 3px solid rgb(255, 230, 0);
+    color: cadetblue;
+}
+
+.img-4, .img-5, .img-6 {
+  aspect-ratio: 1 / 1;
+}
+
+.img-2, .img-3 {
+  aspect-ratio: 1.5 / 1;
+}
+
+.img-1 { background-image: url('../../images/Layer\ 22.png'); }
+.img-2 { background-image: url('../../images/Layer\ 21.png'); }
+.img-3 { background-image: url('../../images/Layer\ 25.png'); }
+.img-4 { background-image: url('../../images/Layer\ 31.png'); }
+.img-5 { background-image: url('../../images/Layer\ 29.png'); }
+.img-6 { background-image: url('../../images/Layer\ 27.png'); }
+
+
+.logo-img {
+  width: 100px;
+  height: auto;
+}
+
+.container__images-content-text {
+  font-family: ProximaNova-Light, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 50%;
+}

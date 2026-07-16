@@ -1,0 +1,48 @@
+.footer__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+    column-gap: 30px;
+}
+
+.footer__left {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.space {
+    white-space: nowrap;
+}
+
+.footer__text {
+    color: black;
+    font-family: ProximaNova-Semibold;
+    letter-spacing: 30%;
+}
+
+.footer__nav-list {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(5,1fr);
+    list-style: none;
+}
+
+.footer__nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: ProximaNova-Bold;
+    letter-spacing: 30%;
+    transition: all 0.5s;
+}
+
+.footer__images {
+    grid-template-columns: repeat(3,max-content);
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
